@@ -295,7 +295,7 @@ namespace http {
 				bCreated = true;
 				break;
 			case pTypeTEMP_BARO:
-				DeviceRowIdx=m_sql.UpdateValue(HwdID, ID, 1, pTypeTEMP_BARO, sTypeTB1, 12, 255, 0, "0.0;1010;1", devname);
+				DeviceRowIdx=m_sql.UpdateValue(HwdID, ID, 1, pTypeTEMP_BARO, sTypeBMP085, 12, 255, 0, "0.0;1010;1", devname);
 				bCreated = true;
 				break;
 			case pTypeTEMP_HUM_BARO:

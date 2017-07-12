@@ -294,6 +294,10 @@ namespace http {
 				DeviceRowIdx=m_sql.UpdateValue(HwdID, ID, 1, pTypeTEMP_HUM, sTypeTH1, 12, 255, 0, "0.0;50;1", devname);
 				bCreated = true;
 				break;
+			case pTypeTEMP_BARO:
+				DeviceRowIdx=m_sql.UpdateValue(HwdID, ID, 1, pTypeTEMP_BARO, sTypeTB1, 12, 255, 0, "0.0;1010;1", devname);
+				bCreated = true;
+				break;
 			case pTypeTEMP_HUM_BARO:
 				DeviceRowIdx=m_sql.UpdateValue(HwdID, ID, 1, pTypeTEMP_HUM_BARO, sTypeTHB1, 12, 255, 0, "0.0;50;1;1010;1", devname);
 				bCreated = true;
